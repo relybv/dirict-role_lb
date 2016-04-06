@@ -17,7 +17,7 @@ describe 'role_lb' do
           it { is_expected.to contain_class('role_lb') }
        
           it { is_expected.to contain_class('profile_base') }
-#          it { is_expected.to contain_class('profile_base::rspec_monitor') }
+          it { is_expected.to contain_class('profile_haproxy') }
 
         end
       end
