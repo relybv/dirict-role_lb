@@ -9,6 +9,7 @@ fixtures:
     haproxy: "https://github.com/puppetlabs/puppetlabs-haproxy.git"
     profile_haproxy: "https://github.com/relybv/dirict-profile_haproxy.git"
     rsyslog: "https://github.com/saz/puppet-rsyslog.git"
+    motd: "https://github.com/puppetlabs/puppetlabs-motd.git"
 
   symlinks:
     role_lb: "#{source_dir}"
