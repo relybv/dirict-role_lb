@@ -7,6 +7,8 @@ fixtures:
       ref: "4.2.0"
     profile_base: "https://github.com/relybv/dirict-profile_base.git"
     rspec_monitor: "git://github.com/pgomersbach/test-rspec_monitor.git"
+    telegraf: "https://github.com/datacentred/puppet-telegraf.git"
+    profile_telegraf: "https://github.com/relybv/rely-profile_telegraf.git"
     concat: "https://github.com/puppetlabs/puppetlabs-concat.git"
     haproxy: "https://github.com/puppetlabs/puppetlabs-haproxy.git"
     profile_haproxy: "https://github.com/relybv/dirict-profile_haproxy.git"
