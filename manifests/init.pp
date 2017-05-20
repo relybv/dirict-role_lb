@@ -15,6 +15,8 @@ class role_lb
   include ::profile_base::rspec_monitor
   include ::profile_telegraf
   include ::profile_telegraf::rspec_monitor
+  include ::profile_beats
+  include ::profile_beats::rspec_monitor
   include ::profile_haproxy
   include ::profile_haproxy::rspec_monitor
 }
