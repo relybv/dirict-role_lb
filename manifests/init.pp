@@ -19,4 +19,6 @@ class role_lb
   include ::profile_beats::rspec_monitor
   include ::profile_haproxy
   include ::profile_haproxy::rspec_monitor
+  include ::profile_mcollective
+  include ::profile_mcollective::rspec_monitor
 }
