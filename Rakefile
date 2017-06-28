@@ -2,12 +2,7 @@ require 'puppetlabs_spec_helper/rake_tasks'
 require 'puppet/version'
 require 'puppet-lint/tasks/puppet-lint'
 require 'puppet-syntax/tasks/puppet-syntax'
-
-if Puppet.version.to_f >= 4.9
-    require 'semantic_puppet'
-elsif Puppet.version.to_f >= 3.6 && Puppet.version.to_f < 4.9
-    require 'puppet/vendor/semantic/lib/semantic'
-end
+require 'semantic_puppet'
 
 ENV['STRICT_VARIABLES'] = 'no'
 
@@ -21,7 +16,7 @@ end
 
 PuppetLint.configuration.relative = true
 PuppetLint.configuration.send("disable_80chars")
-PuppetLint.configuration.log_format = "%{path}:%{linenumber}:%{check}:%{KIND}:%{message}"
+# PuppetLint.configuration.log_format = "%{path}:%{linenumber}:%{check}:%{KIND}:%{message}"
 PuppetLint.configuration.fail_on_warnings = true
 
 # Forsake support for Puppet 2.6.2 for the benefit of cleaner code.
