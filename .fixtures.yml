@@ -22,6 +22,7 @@ fixtures:
     motd: "https://github.com/puppetlabs/puppetlabs-motd.git"
     gai: "https://github.com/smoeding/puppet-gai.git"
     apt: "https://github.com/puppetlabs/puppetlabs-apt.git"
+    archive: "https://github.com/voxpupuli/puppet-archive.git"
 
 
   symlinks:
