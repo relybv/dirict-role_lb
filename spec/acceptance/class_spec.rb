@@ -12,14 +12,13 @@ describe 'role_lb class' do
   context 'default parameters' do
     if ENV['BEAKER'] == 'true'
       # Using puppet_apply as a helper
-      it 'should work idempotently with no errors' do
+      it 'should work with no errors' do
         pp = <<-EOS
         class { 'role_lb': }
         EOS
 
-        # Run it twice and test for idempotency
+        # Run it and test for errors
         apply_manifest(pp, :catch_failures => true)
-        apply_manifest(pp, :catch_changes  => true)
       end
     end
 
