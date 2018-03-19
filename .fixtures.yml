@@ -23,7 +23,9 @@ fixtures:
     gai: "https://github.com/smoeding/puppet-gai.git"
     apt: "https://github.com/puppetlabs/puppetlabs-apt.git"
     archive: "https://github.com/voxpupuli/puppet-archive.git"
-
+    profile_users: "https://github.com/relybv/dirict-profile_users.git"
+    accounts: "https://github.com/puppetlabs/puppetlabs-accounts.git"
+    sudo: "https://github.com/saz/puppet-sudo.git"
 
   symlinks:
     role_lb: "#{source_dir}"
